@@ -1,27 +1,27 @@
-# Google Drive 百宝箱
+# Google Drive 百寶箱
 
-> [与其他工具的对比](./compare.md)
+> [與其他工具的對比](./compare.md)
 
-## 目录
+## 目錄
 - [<a href="./changelog.md">更新日志</a>](#更新日志)
 - [demo](#demo)
 - [English Version (thanks to <a href="https://github.com/roshanconnor123">@roshanconnor123</a>)](#english-version-thanks-to-roshanconnor123)
-- [无需域名和nginx版](#无需域名和nginx版)
-- [colab脚本（省去本地安装步骤，直接网页可用，感谢贡献者<a href="https://github.com/orange2008">@orange2008</a>）](#colab脚本省去本地安装步骤直接网页可用感谢贡献者orange2008)
-- [一键安装脚本(感谢 脚本制作者 <a href="https://github.com/vitaminx">@vitaminx</a>)](#一键安装脚本感谢-脚本制作者-vitaminx)
-- [繁体中文版（感谢贡献者<a href="https://github.com/liaojack8/">@liaojack8</a>）](#繁体中文版感谢贡献者liaojack8)
-- [Docker 版（感谢贡献者<a href="https://github.com/gdtool/">@gdtool</a>)](#docker-版感谢贡献者gdtool)
-- [常见问题](#常见问题)
-- [搭建过程](#搭建过程)
-- [功能简介](#功能简介)
-- [环境配置](#环境配置)
-- [依赖安装](#依赖安装)
+- [無需域名和nginx版](#無需域名和nginx版)
+- [colab腳本（省去本地安裝步驟，直接網頁可用，感謝貢獻者<a href="https://github.com/orange2008">@orange2008</a>）](#colab腳本省去本地安裝步驟直接網頁可用感謝貢獻者orange2008)
+- [一鍵安裝腳本(感謝 腳本制作者 <a href="https://github.com/vitaminx">@vitaminx</a>)](#一鍵安裝腳本感謝-腳本制作者-vitaminx)
+- [繁體中文版（感謝貢獻者<a href="https://github.com/liaojack8/">@liaojack8</a>）](#繁體中文版感謝貢獻者liaojack8)
+- [Docker 版（感謝貢獻者<a href="https://github.com/gdtool/">@gdtool</a>)](#docker-版感謝貢獻者gdtool)
+- [常見問題](#常見問題)
+- [搭建過程](#搭建過程)
+- [功能簡介](#功能簡介)
+- [環境配置](#環境配置)
+- [依賴安裝](#依賴安裝)
 - [Service Account 配置](#service-account-配置)
-- [个人帐号配置](#个人帐号配置)
+- [個人帳號配置](#個人帳號配置)
 - [Bot配置](#bot配置)
-- [补充说明](#补充说明)
-- [专家设置](#专家设置)
-- [注意事项](#注意事项)
+- [補充說明](#補充說明)
+- [專家設置](#專家設置)
+- [注意事項](#注意事項)
 
 ## [更新日志](./changelog.md)
 
@@ -32,170 +32,170 @@
 - [roshanconnor123/gd-utils](https://github.com/roshanconnor123/gd-utils)
 - [roshanconnor123/Gdutils_Tgbot](https://github.com/roshanconnor123/Gdutils_Tgbot)
 
-## 无需域名和nginx版
-> 此版本无需域名和web服务即可使用tg机器人，大大简化了配置过程，感谢贡献者 [@dissipator](https://github.com/dissipator)
+## 無需域名和nginx版
+> 此版本無需域名和web服務即可使用tg機器人，大大簡化了配置過程，感謝貢獻者 [@dissipator](https://github.com/dissipator)
 
 [https://github.com/dissipator/gd-utils](https://github.com/dissipator/gd-utils)
 
-## colab脚本（省去本地安装步骤，直接网页可用，感谢贡献者[@orange2008](https://github.com/orange2008)）
+## colab腳本（省去本地安裝步驟，直接網頁可用，感謝貢獻者[@orange2008](https://github.com/orange2008)）
 [https://colab.research.google.com/drive/1i1W9nAzgiDtfA_rmTBcpMpwxVUhwgLsq](https://colab.research.google.com/drive/1i1W9nAzgiDtfA_rmTBcpMpwxVUhwgLsq)
 
-> 打开上面链接后，保存到自己的云端硬盘（请一定要保存，因为上面的共享链接操作记录所有人可见）
+> 打開上面鏈接後，保存到自己的雲端硬盤（請一定要保存，因為上面的共享鏈接操作記錄所有人可見）
 
-colab使用录屏：[https://drive.google.com/drive/folders/19T37ARH7M1h67JGYanKp9LvORjJLEp_x](https://drive.google.com/drive/folders/19T37ARH7M1h67JGYanKp9LvORjJLEp_x)
+colab使用錄屏：[https://drive.google.com/drive/folders/19T37ARH7M1h67JGYanKp9LvORjJLEp_x](https://drive.google.com/drive/folders/19T37ARH7M1h67JGYanKp9LvORjJLEp_x)
 
-这里还有另一位网友[@iErics](https://github.com/iErics)制作的colab脚本，界面更加规整，功能也更完整些（比如可以选择是否继续任务等），使用方法大同小异：
+這裡還有另一位網友[@iErics](https://github.com/iErics)制作的colab腳本，界面更加規整，功能也更完整些（比如可以選擇是否繼續任務等），使用方法大同小異：
 [https://colab.research.google.com/github/iErics/gd-utils/blob/master/Colab_gd_utils.ipynb](https://colab.research.google.com/github/iErics/gd-utils/blob/master/Colab_gd_utils.ipynb)
 
-## 一键安装脚本(感谢 脚本制作者 [@vitaminx](https://github.com/vitaminx))
-> 如果你没有Linux操作经验或者是新开的vps，可尝试使用此脚本
+## 一鍵安裝腳本(感謝 腳本制作者 [@vitaminx](https://github.com/vitaminx))
+> 如果你沒有Linux操作經驗或者是新開的vps，可嘗試使用此腳本
 
-请访问 [https://github.com/vitaminx/gd-utils](https://github.com/vitaminx/gd-utils) 获取安装方法
+請訪問 [https://github.com/vitaminx/gd-utils](https://github.com/vitaminx/gd-utils) 獲取安裝方法
 
-## 繁体中文版（感谢贡献者[@liaojack8](https://github.com/liaojack8/)）
+## 繁體中文版（感謝貢獻者[@liaojack8](https://github.com/liaojack8/)）
 [https://github.com/liaojack8/gd-utils-cht](https://github.com/liaojack8/gd-utils-cht)
 
-> 目前项目处于起始阶段，尚不支持 i18n(多语言) ，所以上面繁体版是hard code的fork，如果你有兴趣让本项目增加多语言支持，欢迎PR。
+> 目前項目處於起始階段，尚不支持 i18n(多語言) ，所以上面繁體版是hard code的fork，如果你有興趣讓本項目增加多語言支持，歡迎PR。
 
-## Docker 版（感谢贡献者[@gdtool](https://github.com/gdtool/))
+## Docker 版（感謝貢獻者[@gdtool](https://github.com/gdtool/))
 [https://github.com/gdtool/gd-utils-docker](https://github.com/gdtool/gd-utils-docker)
 
-## 常见问题
-**[如果你遇到任务完成时拷贝成功的文件少于统计的文件数，请务必点击查看](https://github.com/iwestlin/gd-utils/blob/master/changelog.md#%E9%87%8D%E8%A6%81%E6%9B%B4%E6%96%B02020-06-29)**
+## 常見問題
+**[如果你遇到任務完成時拷貝成功的文件少於統計的文件數，請務必點擊查看](https://github.com/iwestlin/gd-utils/blob/master/changelog.md#%E9%87%8D%E8%A6%81%E6%9B%B4%E6%96%B02020-06-29)**
 
-在命令行操作时有时会输出Google内部报错信息，这是正常情况，不会影响最终结果，因为程序对每个请求都有7次重试的机制。
-如果经常出现404 file not found的错误，说明是sa的权限有问题，请点击上面的链接查看解决办法。
+在命令行操作時有時會輸出Google內部報錯信息，這是正常情況，不會影響最終結果，因為程序對每個請求都有7次重試的機制。
+如果經常出現404 file not found的錯誤，說明是sa的權限有問題，請點擊上面的鏈接查看解決辦法。
 
-复制结束后，如果最后输出的消息里有 `未读取完毕的目录ID`，只需要在命令行执行上次同样的拷贝命令，选continue即可继续。
+復制結束後，如果最後輸出的消息裡有 `未讀取完畢的目錄ID`，只需要在命令行執行上次同樣的拷貝命令，選continue即可繼續。
 
-如果你复制完成以后，统计新的文件夹链接发现文件数比源文件夹少，说明Google正在更新数据库，请给它一点时间，一般等半小时再统计数据会比较完整。
+如果你復制完成以後，統計新的文件夾鏈接發現文件數比源文件夾少，說明Google正在更新數據庫，請給它一點時間，一般等半小時再統計數據會比較完整。
 
-如果你使用tg机器人拷贝文件数超多的目录时，发送拷贝命令以后，任务进度很久未开始，这是因为程序正在获取源文件夹的所有文件信息。
+如果你使用tg機器人拷貝文件數超多的目錄時，發送拷貝命令以後，任務進度很久未開始，這是因為程序正在獲取源文件夾的所有文件信息。
 
-**转存的运行机制严格按照以下顺序**：
+**轉存的運行機制嚴格按照以下順序**：
 ```
-1、获取源文件夹所有文件信息
-2、根据源文件夹的目录结构，在目标文件夹创建目录
-3、所有目录创建完成后，开始复制文件
+1、獲取源文件夾所有文件信息
+2、根據源文件夾的目錄結構，在目標文件夾創建目錄
+3、所有目錄創建完成後，開始復制文件
 ```
 
-如果源文件夹的文件数非常多（数十万），在命令行操作时需要添加额外参数：（因为程序运行的时候会把文件信息保存在内存中，文件数太多的话容易内存占用太多被nodejs干掉）
+如果源文件夾的文件數非常多（數十萬），在命令行操作時需要添加額外參數：（因為程序運行的時候會把文件信息保存在內存中，文件數太多的話容易內存占用太多被nodejs干掉）
 ```
  node --max-old-space-size=1024 count folder-id -S
 ```
-这样进程就能最大占用 1G 内存了，我最多测试过200万+文件数的任务，1G 内存足以完成。
+這樣進程就能最大占用 1G 內存了，我最多測試過200萬+文件數的任務，1G 內存足以完成。
 
-这里还有一些网友的踩坑心得，如果你配置的时候也不小心掉进坑里，可以进去找找有没有解决办法：  
-- [ikarosone 基于宝塔的搭建过程](https://www.ikarosone.top/archives/195.html)
+這裡還有一些網友的踩坑心得，如果你配置的時候也不小心掉進坑裡，可以進去找找有沒有解決辦法：  
+- [ikarosone 基於寶塔的搭建過程](https://www.ikarosone.top/archives/195.html)
 - [@greathappyforest 踩的坑](doc/tgbot-appache2-note.md)
 
-## 搭建过程
-机器人搭建过程录屏：[https://drive.google.com/drive/folders/1Lu7Cwh9lIJkfqYDIaJrFpzi8Lgdxr4zT](https://drive.google.com/drive/folders/1Lu7Cwh9lIJkfqYDIaJrFpzi8Lgdxr4zT)
+## 搭建過程
+機器人搭建過程錄屏：[https://drive.google.com/drive/folders/1Lu7Cwh9lIJkfqYDIaJrFpzi8Lgdxr4zT](https://drive.google.com/drive/folders/1Lu7Cwh9lIJkfqYDIaJrFpzi8Lgdxr4zT)
 
 需要注意的地方：
 
-- 视频中省略了一个比较重要的步骤就是**从本地上传service account授权文件到 sa 目录下**，tg机器人的所有操作默认都是通过sa授权的，所以读者请不要忘了
-- 视频中**nginx的配置里，server_name就是你的二级域名，需要和cloudflare的设置一样**的（mybbbottt），我分开录的视频所以没做到一致。
-- 还有省略的步骤就是注册域名和把域名托管到cloudflare了，这一步网上太多资料了，甚至也有免费注册（一年）域名的地方（ https://www.freenom.com/ ），具体教程请自行搜索
+- 視頻中省略了一個比較重要的步驟就是**從本地上傳service account授權文件到 sa 目錄下**，tg機器人的所有操作默認都是通過sa授權的，所以讀者請不要忘了
+- 視頻中**nginx的配置裡，server_name就是你的二級域名，需要和cloudflare的設置一樣**的（mybbbottt），我分開錄的視頻所以沒做到一致。
+- 還有省略的步驟就是注冊域名和把域名托管到cloudflare了，這一步網上太多資料了，甚至也有免費注冊（一年）域名的地方（ https://www.freenom.com/ ），具體教程請自行搜索
 
-## 功能简介
+## 功能簡介
 本工具目前支持以下功能：
-- 统计任意（您拥有相关权限的，下同，不再赘述）目录的文件信息，且支持以各种形式（html, tree, table, json）导出。
-支持中断恢复，且统计过的目录（包括其所有递归子目录）信息会记录在本地数据库文件中（gdurl.sqlite）
-请在本项目目录下命令行输入 `./count -h` 查看使用帮助
+- 統計任意（您擁有相關權限的，下同，不再贅述）目錄的文件信息，且支持以各種形式（html, tree, table, json）導出。
+支持中斷恢復，且統計過的目錄（包括其所有遞歸子目錄）信息會記錄在本地數據庫文件中（gdurl.sqlite）
+請在本項目目錄下命令行輸入 `./count -h` 查看使用幫助
 
-- 拷贝任意目录所有文件到您指定目录，同样支持中断恢复。
-支持根据文件大小过滤，可输入 `./copy -h` 查看使用帮助
+- 拷貝任意目錄所有文件到您指定目錄，同樣支持中斷恢復。
+支持根據文件大小過濾，可輸入 `./copy -h` 查看使用幫助
 
-- 对任意目录进行去重，删除同一目录下的md5值相同的文件（只保留一个），删除同目录下的同名空目录。
-命令行输入 `./dedupe -h` 查看使用帮助
+- 對任意目錄進行去重，刪除同一目錄下的md5值相同的文件（只保留一個），刪除同目錄下的同名空目錄。
+命令行輸入 `./dedupe -h` 查看使用幫助
 
-- 在 config.js 里完成相关配置后，可以将本项目部署在（可正常访问谷歌服务的）服务器上，提供 http 文件统计接口
+- 在 config.js 裡完成相關配置後，可以將本項目部署在（可正常訪問谷歌服務的）服務器上，提供 http 文件統計接口
 
-- 支持 telegram bot，配置完成后，上述功能大多可以通过 bot 进行操作
+- 支持 telegram bot，配置完成後，上述功能大多可以通過 bot 進行操作
 
-## 环境配置
-本工具需要安装nodejs，客户端安装请访问[https://nodejs.org/zh-cn/download/](https://nodejs.org/zh-cn/download/)，服务器安装可参考[https://github.com/nodesource/distributions/blob/master/README.md#debinstall](https://github.com/nodesource/distributions/blob/master/README.md#debinstall)
+## 環境配置
+本工具需要安裝nodejs，客戶端安裝請訪問[https://nodejs.org/zh-cn/download/](https://nodejs.org/zh-cn/download/)，服務器安裝可參考[https://github.com/nodesource/distributions/blob/master/README.md#debinstall](https://github.com/nodesource/distributions/blob/master/README.md#debinstall)
 
-建议选择v12版本的node，以防接下来安装依赖出错。
+建議選擇v12版本的node，以防接下來安裝依賴出錯。
 
-如果你的网络环境无法正常访问谷歌服务，需要先在命令行进行一些配置：（如果可以正常访问则跳过此节）
+如果你的網絡環境無法正常訪問谷歌服務，需要先在命令行進行一些配置：（如果可以正常訪問則跳過此節）
 ```
 http_proxy="YOUR_PROXY_URL" && https_proxy=$http_proxy && HTTP_PROXY=$http_proxy && HTTPS_PROXY=$http_proxy
 ```
-请把`YOUR_PROXY_URL`替换成你自己的代理地址
+請把`YOUR_PROXY_URL`替換成你自己的代理地址
 
-## 其他环境
-nodejs本身是跨平台的，所以项目可以在各种操作系统上运行，下面的说明是针对Linux系统，如果你需要在 Windows 或 Android 上进行安装，可以参考：
+## 其他環境
+nodejs本身是跨平台的，所以項目可以在各種操作系統上運行，下面的說明是針對Linux系統，如果你需要在 Windows 或 Android 上進行安裝，可以參考：
 [https://github.com/roshanconnor123/gd-utils#installation (英文)](https://github.com/roshanconnor123/gd-utils#installation)
 
-## 依赖安装
-- 命令行执行`git clone https://github.com/iwestlin/gd-utils && cd gd-utils` 克隆并切换到本项目文件夹下
-- **执行 `npm install --unsafe-perm=true --allow-root` 安装依赖**，部分依赖可能需要代理环境才能下载，所以需要上一步的配置
+## 依賴安裝
+- 命令行執行`git clone https://github.com/iwestlin/gd-utils && cd gd-utils` 克隆並切換到本項目文件夾下
+- **執行 `npm install --unsafe-perm=true --allow-root` 安裝依賴**，部分依賴可能需要代理環境才能下載，所以需要上一步的配置
 
-如果在安装过程中发生报错，请切换nodejs版本到v12再试。如果报错信息里有`Error: not found: make`之类的消息，说明你的命令行环境缺少make命令，可参考[这里](https://askubuntu.com/questions/192645/make-command-not-found)或直接google搜索`Make Command Not Found`
+如果在安裝過程中發生報錯，請切換nodejs版本到v12再試。如果報錯信息裡有`Error: not found: make`之類的消息，說明你的命令行環境缺少make命令，可參考[這裡](https://askubuntu.com/questions/192645/make-command-not-found)或直接google搜索`Make Command Not Found`
 
-如果报错信息里有 `better-sqlite3`，先执行 `npm config set unsafe-perm=true`
-然后 `rm -rf node_module` 删掉依赖目录，最后再执行下`npm i`安装试试。
+如果報錯信息裡有 `better-sqlite3`，先執行 `npm config set unsafe-perm=true`
+然後 `rm -rf node_module` 刪掉依賴目錄，最後再執行下`npm i`安裝試試。
 
-依赖安装完成后，项目文件夹下会多出个`node_modules`目录，请不要删除它，接下来进行下一步配置。
+依賴安裝完成後，項目文件夾下會多出個`node_modules`目錄，請不要刪除它，接下來進行下一步配置。
 
 ## Service Account 配置
-强烈建议使用service account（后称SA），因为机器人的所有操作默认都用的SA权限。
-SA授权文件获取方法请参见  
+強烈建議使用service account（後稱SA），因為機器人的所有操作默認都用的SA權限。
+SA授權文件獲取方法請參見  
 - 英文[https://github.com/xyou365/AutoRclone](https://github.com/xyou365/AutoRclone)
 - 中文[http://blog.jialezi.net/?post=153](http://blog.jialezi.net/?post=153)
 
-获取到 SA 的 json 文件并将其加入团队盘成员后，请将文件拷贝到gd-utils的 `sa` 目录下。  
-注意，AutoRclone 将 SA 加入 group 的脚本有点问题，可能会加入不完全，而gd-utils混入未授权的SA文件会导致严重的问题，暂时的解决方法是[批量验证SA的有效性](https://github.com/iwestlin/gd-utils/blob/master/changelog.md#%E9%87%8D%E8%A6%81%E6%9B%B4%E6%96%B02020-06-29)
+獲取到 SA 的 json 文件並將其加入團隊盤成員後，請將文件拷貝到gd-utils的 `sa` 目錄下。  
+注意，AutoRclone 將 SA 加入 group 的腳本有點問題，可能會加入不完全，而gd-utils混入未授權的SA文件會導致嚴重的問題，暫時的解決方法是[批量驗證SA的有效性](https://github.com/iwestlin/gd-utils/blob/master/changelog.md#%E9%87%8D%E8%A6%81%E6%9B%B4%E6%96%B02020-06-29)
 
-配置好 SA 以后，如果你不需要对个人盘下的文件进行操作，可跳过[个人帐号配置]这节，而且命令行执行命令的时候，记得带上 `-S` 参数告诉程序使用SA授权进行操作。
+配置好 SA 以後，如果你不需要對個人盤下的文件進行操作，可跳過[個人帳號配置]這節，而且命令行執行命令的時候，記得帶上 `-S` 參數告訴程序使用SA授權進行操作。
 
-## 个人帐号配置
-- 命令行执行 `rclone config file` 找到 rclone 的配置文件路径
-- 打开这个配置文件 `rclone.conf`, 找到 `client_id`, `client_secret` 和 `refresh_token` 这三个变量，将其分别填入本项目下的 `config.js` 中，需要注意这三个值必须被成对的英文引号包裹，且引号后以英文逗号结尾，也就是需要符合JavaScript的[对象语法](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Object_initializer)
+## 個人帳號配置
+- 命令行執行 `rclone config file` 找到 rclone 的配置文件路徑
+- 打開這個配置文件 `rclone.conf`, 找到 `client_id`, `client_secret` 和 `refresh_token` 這三個變量，將其分別填入本項目下的 `config.js` 中，需要注意這三個值必須被成對的英文引號包裹，且引號後以英文逗號結尾，也就是需要符合JavaScript的[對像語法](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Object_initializer)
 
-如果你没有配置过rclone，可以搜索`rclone google drive 教程`完成相关配置。
+如果你沒有配置過rclone，可以搜索`rclone google drive 教程`完成相關配置。
 
-如果你的`rclone.conf`里没有`client_id`和`client_secret`，说明你配置rclone的时候默认用了rclone自己的client_id，连rclone自己[都不建议这样做](https://github.com/rclone/rclone/blob/8d55367a6a2f47a1be7e360a872bd7e56f4353df/docs/content/drive.md#making-your-own-client_id)，因为大家共享了它的接口调用限额，在使用高峰期可能会触发限制。
+如果你的`rclone.conf`裡沒有`client_id`和`client_secret`，說明你配置rclone的時候默認用了rclone自己的client_id，連rclone自己[都不建議這樣做](https://github.com/rclone/rclone/blob/8d55367a6a2f47a1be7e360a872bd7e56f4353df/docs/content/drive.md#making-your-own-client_id)，因為大家共享了它的接口調用限額，在使用高峰期可能會觸發限制。
 
-获取自己的clinet_id可以参见这两篇文章：[Cloudbox/wiki/Google-Drive-API-Client-ID-and-Client-Secret](https://github.com/Cloudbox/Cloudbox/wiki/Google-Drive-API-Client-ID-and-Client-Secret) 和 [https://p3terx.com/archives/goindex-google-drive-directory-index.html#toc_2](https://p3terx.com/archives/goindex-google-drive-directory-index.html#toc_2)
+獲取自己的clinet_id可以參見這兩篇文章：[Cloudbox/wiki/Google-Drive-API-Client-ID-and-Client-Secret](https://github.com/Cloudbox/Cloudbox/wiki/Google-Drive-API-Client-ID-and-Client-Secret) 和 [https://p3terx.com/archives/goindex-google-drive-directory-index.html#toc_2](https://p3terx.com/archives/goindex-google-drive-directory-index.html#toc_2)
 
-获取到client_id和client_secret后，再次执行一遍`rclone config`，创建一个新的remote，**在配置过程中一定要填入你新获取的clinet_id和client_secret**，就能在`rclone.conf`里看到新获取的`refresh_token`了。**注意，不能使用之前的refrest_token**，因为它对应的是rclone自带的client_id
+獲取到client_id和client_secret後，再次執行一遍`rclone config`，創建一個新的remote，**在配置過程中一定要填入你新獲取的clinet_id和client_secret**，就能在`rclone.conf`裡看到新獲取的`refresh_token`了。**注意，不能使用之前的refrest_token**，因為它對應的是rclone自帶的client_id
 
-参数配置好以后，在命令行执行 `node check.js`，如果命令返回了你的谷歌硬盘根目录的数据，说明配置成功，可以开始使用本工具了。
+參數配置好以後，在命令行執行 `node check.js`，如果命令返回了你的谷歌硬盤根目錄的數據，說明配置成功，可以開始使用本工具了。
 
 ## Bot配置
-如果要使用 telegram bot 功能，需要进一步配置。
+如果要使用 telegram bot 功能，需要進一步配置。
 
-首先在 [https://core.telegram.org/bots#6-botfather](https://core.telegram.org/bots#6-botfather) 根据指示拿到 bot 的 token，然后填入 config.js 中的 `tg_token` 变量。
+首先在 [https://core.telegram.org/bots#6-botfather](https://core.telegram.org/bots#6-botfather) 根據指示拿到 bot 的 token，然後填入 config.js 中的 `tg_token` 變量。
 
-然后获取自己的 telegram username，这个username不是显示的名称，而是tg个人网址后面的那串字符，比如，我的tg个人网址是 `https://t.me/viegg` ，用户名就是 `viegg`，获取用户名的目的是在代码里配置白名单，只允许特定的用户调用机器人。将username填入 `config.js`里的配置，像这样：
-`tg_whitelist: ['viegg']`，就代表只允许我自己使用这个机器人了。
+然後獲取自己的 telegram username，這個username不是顯示的名稱，而是tg個人網址後面的那串字符，比如，我的tg個人網址是 `https://t.me/viegg` ，用戶名就是 `viegg`，獲取用戶名的目的是在代碼裡配置白名單，只允許特定的用戶調用機器人。將username填入 `config.js`裡的配置，像這樣：
+`tg_whitelist: ['viegg']`，就代表只允許我自己使用這個機器人了。
 
-如果想把机器人的使用权限分享给别的用户，只需要改成：
+如果想把機器人的使用權限分享給別的用戶，只需要改成：
 ```
 tg_whitelist: ['viegg', '其他人的username'],
 ```
 
-接下来需要将代码部署到服务器上。
-如果你一开始就是在服务器上配置的，可以直接执行`npm i pm2 -g`
+接下來需要將代碼部署到服務器上。
+如果你一開始就是在服務器上配置的，可以直接執行`npm i pm2 -g`
 
-如果你之前是在本地操作的，请在服务器上同样重复一遍，配置好相关参数后，执行`npm i pm2 -g`安装进程守护程序pm2
+如果你之前是在本地操作的，請在服務器上同樣重復一遍，配置好相關參數後，執行`npm i pm2 -g`安裝進程守護程序pm2
 
-安装好pm2之后，执行 `pm2 start server.js --node-args="--max-old-space-size=1024"`，代码运行后会在服务器上监听`23333`端口。
+安裝好pm2之後，執行 `pm2 start server.js --node-args="--max-old-space-size=1024"`，代碼運行後會在服務器上監聽`23333`端口。
 
-如果你启动程序后想看运行日志，执行 `pm2 logs`
+如果你啟動程序後想看運行日志，執行 `pm2 logs`
 
-查看 pm2 守护的进程列表，执行 `pm2 l`
+查看 pm2 守護的進程列表，執行 `pm2 l`
 
-停止运行中的进程，执行 `pm2 stop 对应的进程名称`
+停止運行中的進程，執行 `pm2 stop 對應的進程名稱`
 
-**如果你修改了代码中的配置，需要 `pm2 reload server` 才能生效**。
+**如果你修改了代碼中的配置，需要 `pm2 reload server` 才能生效**。
 
-> 如果你不想用nginx，可以将`server.js`中的`23333`改成`80`直接监听80端口（可能需要root权限）
+> 如果你不想用nginx，可以將`server.js`中的`23333`改成`80`直接監聽80端口（可能需要root權限）
 
-接下来可通过nginx或其他工具起一个web服务，示例nginx配置：
+接下來可通過nginx或其他工具起一個web服務，示例nginx配置：
 ```
 server {
   listen 80;
@@ -209,50 +209,50 @@ server {
   }
 }
 ```
-配置好nginx后，可以再套一层cloudflare，具体教程请自行搜索。
+配置好nginx後，可以再套一層cloudflare，具體教程請自行搜索。
 
-检查网站是否部署成功，可以命令行执行（请将YOUR_WEBSITE_URL替换成你的网址）
+檢查網站是否部署成功，可以命令行執行（請將YOUR_WEBSITE_URL替換成你的網址）
 ```
 curl 'YOUR_WEBSITE_URL/api/gdurl/count?fid=124pjM5LggSuwI1n40bcD5tQ13wS0M6wg'
 ```
-如果返回了`gd-utils 成功启动`的消息，说明部署成功了。
+如果返回了`gd-utils 成功啟動`的消息，說明部署成功了。
 
-最后，在命令行执行（请将`YOUR_WEBSITE`和`YOUR_BOT_TOKEN`分别替换成你自己的网址和bot token）
+最後，在命令行執行（請將`YOUR_WEBSITE`和`YOUR_BOT_TOKEN`分別替換成你自己的網址和bot token）
 ```
 curl -F "url=YOUR_WEBSITE/api/gdurl/tgbot" 'https://api.telegram.org/botYOUR_BOT_TOKEN/setWebhook'
 ```
-这样，就将你的服务器连接上你的 telegram bot 了，试着给bot发送个 `/help`，如果它回复给你使用说明，那就配置成功了。
+這樣，就將你的服務器連接上你的 telegram bot 了，試著給bot發送個 `/help`，如果它回復給你使用說明，那就配置成功了。
 
-## 补充说明
-在`config.js`文件里，还有另外的几个参数：
+## 補充說明
+在`config.js`文件裡，還有另外的幾個參數：
 ```
-// 单次请求多少毫秒未响应以后超时（基准值，若连续超时则下次调整为上次的2倍）
+// 單次請求多少毫秒未響應以後超時（基准值，若連續超時則下次調整為上次的2倍）
 const TIMEOUT_BASE = 7000
 
-// 最大超时设置，比如某次请求，第一次7s超时，第二次14s，第三次28s，第四次56s，第五次不是112s而是60s，后续同理
+// 最大超時設置，比如某次請求，第一次7s超時，第二次14s，第三次28s，第四次56s，第五次不是112s而是60s，後續同理
 const TIMEOUT_MAX = 60000
 
-const PAGE_SIZE = 1000 // 每次网络请求读取目录下的文件数，数值越大，越有可能超时，不得超过1000
+const PAGE_SIZE = 1000 // 每次網絡請求讀取目錄下的文件數，數值越大，越有可能超時，不得超過1000
 
-const RETRY_LIMIT = 7 // 如果某次请求失败，允许其重试的最大次数
-const PARALLEL_LIMIT = 20 // 单个任务的网络请求并行数量，可根据网络环境调整
+const RETRY_LIMIT = 7 // 如果某次請求失敗，允許其重試的最大次數
+const PARALLEL_LIMIT = 20 // 單個任務的網絡請求並行數量，可根據網絡環境調整
 
-const DEFAULT_TARGET = '' // 必填，拷贝默认目的地ID，如果不指定target，则会拷贝到此处，建议填写团队盘ID，注意要用英文引号包裹
+const DEFAULT_TARGET = '' // 必填，拷貝默認目的地ID，如果不指定target，則會拷貝到此處，建議填寫團隊盤ID，注意要用英文引號包裹
 ```
-读者可根据各自情况进行调整
+讀者可根據各自情況進行調整
 
-## 专家设置
-这一节面向更加注重安全的专家用户，并假设读者了解nodejs的基本语法
+## 專家設置
+這一節面向更加注重安全的專家用戶，並假設讀者了解nodejs的基本語法
 
-在 `config.js` 中，你可以额外设置两个变量 `ROUTER_PASSKEY` 和 `TG_IPLIST` 来进一步保证接口安全。
+在 `config.js` 中，你可以額外設置兩個變量 `ROUTER_PASSKEY` 和 `TG_IPLIST` 來進一步保證接口安全。
 ```javascript
-// 如果设置了这个值，那么调用 /api/gdurl/count 这个接口必须携带一个叫 passkey 的query，且必须等于ROUTER_PASSKEY的值
-// 如果不设置这个值，那么默认关闭 /api/gdurl/count 这个接口的功能（因为观察到很多用户公开的贴出了自己的API地址……）
+// 如果設置了這個值，那麼調用 /api/gdurl/count 這個接口必須攜帶一個叫 passkey 的query，且必須等於ROUTER_PASSKEY的值
+// 如果不設置這個值，那麼默認關閉 /api/gdurl/count 這個接口的功能（因為觀察到很多用戶公開的貼出了自己的API地址……）
 const ROUTER_PASSKEY = 'your-custom-passkey'
 
-// 与你的服务器通信的tg服务器的 ip 地址，可以在pm2 logs 中看到
-// 如果设置了这个值，那么调用 /api/gdurl/tgbot 这个接口的IP地址必须是 TG_IPLIST 数组的其中之一
-// 如果不设置这个值，则默认任何IP都可以调用此接口（考虑到后面还有个 tg username的白名单验证）
+// 與你的服務器通信的tg服務器的 ip 地址，可以在pm2 logs 中看到
+// 如果設置了這個值，那麼調用 /api/gdurl/tgbot 這個接口的IP地址必須是 TG_IPLIST 數組的其中之一
+// 如果不設置這個值，則默認任何IP都可以調用此接口（考慮到後面還有個 tg username的白名單驗證）
 const TG_IPLIST = ['tg-ip-address']
 
 module.exports = {
@@ -269,13 +269,13 @@ module.exports = {
 }
 ```
 
-## 注意事项
-gd-utlis（以及所有GD转存工具）的原理是调用了[google drive官方接口](https://developers.google.com/drive/api/v3/reference/files/copy)
+## 注意事項
+gd-utlis（以及所有GD轉存工具）的原理是調用了[google drive官方接口](https://developers.google.com/drive/api/v3/reference/files/copy)
 
-gd-utils比较快的原因在[与其他工具的对比](./compare.md)有具体阐述，概括来讲，当它进行转存任务时，不会向google服务器查询目标文件是否已存在，因为它会把复制记录存储在本地数据库，这样就节省了查询花费的时间，而查询接口是google drive所有接口里最耗时的。
+gd-utils比較快的原因在[與其他工具的對比](./compare.md)有具體闡述，概括來講，當它進行轉存任務時，不會向google服務器查詢目標文件是否已存在，因為它會把復制記錄存儲在本地數據庫，這樣就節省了查詢花費的時間，而查詢接口是google drive所有接口裡最耗時的。
 
-这也就导致了gd-utils目前无法对已存在的文件进行增量更新，**除非文件之前就是它拷贝的**，由于它已经将记录保存在本地，所以可以对之前的记录进行增量更新。
+這也就導致了gd-utils目前無法對已存在的文件進行增量更新，**除非文件之前就是它拷貝的**，由於它已經將記錄保存在本地，所以可以對之前的記錄進行增量更新。
 
-目前尚不知道google是否会对接口做频率限制，也不知道会不会影响google账号本身的安全。
+目前尚不知道google是否會對接口做頻率限制，也不知道會不會影響google賬號本身的安全。
 
-**请勿滥用，后果自负**
+**請勿濫用，後果自負**
