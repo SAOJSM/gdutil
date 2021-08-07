@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+const { argv } = require('yargs')
+  .usage('用法: ./$0 <folder-id> [options]')
+  .alias('y', 'yes')
+  .describe('yes', '若發現重覆項，不詢問直接刪除')
+  .alias('u', 'update')
+  .describe('u', '不使用本地緩存，強制從線上獲取源文件夾信息')
+  .alias('S', 'service_account')
+  .describe('S', '使用service account進行操作，前提是必須在 ./sa 目錄下放置sa授權json文件')
+  .help('h')
+  .alias('h', 'help')
+
+const { dedupe, validate_fid } = require('./src/gd')
+
+const [fid] = argv._
+if (validate_fid(fid)) {
+  const { update, service_account, yes } = argv
+  dedupe({ fid, update, service_account, yes }).then(info => {
+    if (!info) return
+    const { file_count, folder_count } = info
+    console.log('任務完成，共刪除文件數：', file_count, '目錄數：', folder_count)
+  })
+} else {
+  console.warn('目錄ID缺失或格式錯誤')
+}
