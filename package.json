@@ -1,8 +1,8 @@
 {
-  "name": "gd-utils",
+  "name": "gdutils",
   "version": "1.0.1",
   "description": "google drive utils",
-  "repository": "SAOJSM/gd-utils",
+  "repository": "SAOJSM/gdutils",
   "main": "src/gd.js",
   "scripts": {
     "start": "https_proxy='http://127.0.0.1:1086' nodemon server.js",
