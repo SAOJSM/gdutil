@@ -12,13 +12,13 @@ const PARALLEL_LIMIT = 20 // 網路請求的並行數量，可根據網路環境
 const DEFAULT_TARGET = '' // 必填，複製默認目的地ID，如果不指定target，則會複製到此處，建議填寫團隊盤ID
 
 const AUTH = { // 如果您擁有service account的json授權文件，可將其複製至 sa 目錄中以代替 client_id/secret/refrest_token
-  client_id: '1012454206574-u8u0e6ft8jpktjndogpedso68td7d245.apps.googleusercontent.com',
-  client_secret: '4zcv-dCFCBsJeN6vzJ2Z8xmr',
+  client_id: '{{ secrets.CLIENT_ID }}',
+  client_secret: '{{ secrets.CLIENT_SECRET }}',
   refresh_token: 'your_refrest_token',
   expires: 0, // 可以留空
   access_token: '', // 可以留空
-  tg_token: '1407127263:AAGXbqDZzk2JCORKSY5oLyxK4ztgemugXjw', // 你的 telegram robot 的 token，獲取方法參見 https://core.telegram.org/bots#6-botfather
-  tg_whitelist: ['Giloa21'] // 你的tg username(t.me/username)，bot只會執行這個列表里的用戶所發送的指令
+  tg_token: '{{ secrets.TG_TOKEN }}', // 你的 telegram robot 的 token，獲取方法參見 https://core.telegram.org/bots#6-botfather
+  tg_whitelist: ['{{ secrets.TG_WHITELIST }}'] // 你的tg username(t.me/username)，bot只會執行這個列表里的用戶所發送的指令
 }
 
 module.exports = { AUTH, PARALLEL_LIMIT, RETRY_LIMIT, TIMEOUT_BASE, TIMEOUT_MAX, LOG_DELAY, PAGE_SIZE, DEFAULT_TARGET }
